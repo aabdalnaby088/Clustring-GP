@@ -1,0 +1,5 @@
+pydantic
+llama-index
+llama-index-llms-gemini
+python-dotenv
+google-generativeai
