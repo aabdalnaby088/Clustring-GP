@@ -1,20 +1,19 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "app/main.py",
-            "use": "@vercel/python",
-            "config": {"maxLambdaSize": "15mb"}
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "app/main.py",
-            "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-            "headers": {
-                "Access-Control-Allow-Origin": "*"
-            }
-        }
+    "functions": {
+        "api/*": { "memory": 512 }
+    },
+    "ignore": [
+        "venv",
+        "__pycache__",
+        "*.pyc",
+        "*.pyo",
+        "node_modules",
+        ".git",
+        ".gitignore",
+        ".vscode",
+        "logs",
+        ".vercel",
+        ".vercel_cache"
     ]
 }
