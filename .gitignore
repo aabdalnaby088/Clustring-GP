@@ -3,3 +3,9 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+vercel/
+.vercel_cache/
+
+.vscode/
+*.log
+.DS_Store

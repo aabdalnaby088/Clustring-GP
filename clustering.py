@@ -1,8 +1,8 @@
 import json
 from llama_index.core.program import LLMTextCompletionProgram
 from llama_index.core.output_parsers import PydanticOutputParser
-from app.db import get_file_names, save_clusters_to_db
-from app.models import ClusterResponse
+from db import get_file_names, save_clusters_to_db
+from models import ClusterResponse
 
 async def cluster_files(llm):
     """Fetch file names from DB, cluster them, and store the result in MongoDB."""

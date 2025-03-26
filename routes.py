@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from app.clustering import cluster_files
-from app.db import get_file_names
+from clustering import cluster_files
+from db import get_file_names
 from llama_index.llms.gemini import Gemini
 import google.generativeai as genai
 from llama_index.core import Settings
